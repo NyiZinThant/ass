@@ -1,6 +1,21 @@
 Dim mealPlanChoice as String
-Dim numAdults, numChildren as integer
-Dim regularCost, weightlifterCost, enduranceCost, GFregularCost, GFweightlifterCost, GFendurance, VregularCost, VweightlifterCost, VenduranceCost,regularChildCost, GFregularChildCost, VregularChildCost, muscleFitnessCost, enduranceFitnessCost, balancedFitnessCost as integer
+Dim numAdults as integer
+Dim numChildren as Integer
+Dim regularCost as integer
+Dim weightlifter as integer
+Dim enduranceCost as integer
+Dim GFregularCost as integer
+Dim GFweightlifterCost as integer
+Dim GFendurance as integer
+Dim VregularCost as integer
+Dim VweightlifterCost as integer
+Dim VenduranceCost as integer
+Dim regularChildCost as integer
+Dim GFregularChildCost as integer
+Dim VregularChildCost as integer
+Dim muscleFitnessCost as integer
+Dim enduranceFitnessCost as integer
+Dim balancedFitnessCost as integer
 
 regularCost = 50
 weightlifterCost = 50
@@ -31,8 +46,10 @@ Private Sub cmdMealplan_Click(sender As Object, e As EventArgs) Handles cmdMealp
 End Sub
 
 Private Sub cmdSubmit_Click(sender As Object, e As EventArgs) Handles cmdSubmit.Click
-    Dim totalCost, fitnessPlansCost as Integer
-    Dim output, fitnessPlans as String
+    Dim totalCost as Integer
+    Dim fitnessPlansCost as Integer
+    Dim output as String
+    Dim fitnessPlans as String
 
     numChildren = cboNumChildren.selectedItem
     numAdutls = cboNumAdults.selectedItem
